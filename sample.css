@@ -14,41 +14,70 @@ body {
 #header{
   height:18em;
   position: relative;
-/*chnage this*/  font-family:"Helvetica Neue", Helvetica , Arial, sans-serif;
+font-family: Helvetica , Arial;
   background-image: url("my.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
 }
 h1{
-  padding: 0.3em 0 0 1.3em;
+  /*padding: 0.3em 0 0 1.3em;*/
   font-size: 2em;
+  text-align: center;
+}
+#logo {
+margin-top:0.3em;
+margin-left:0.5em;
+display: inline-block;
+float:left;
+}
+#nav ul li{
+	display: inline-block;
+  padding-left: 1em;
+
+}
+#nav {
+display: inline-block;
+margin-top:2em;
+float:center;
 }
 img {
   display: block;
   max-width: 100%;
 }
+p{
+  text-align: left;
+  line-height: 1.7em;
+  padding-left: 1.2em;
+  padding-right: 0.2em;
+  padding-bottom: 1em;
+  hyphens: auto;
+}
 #about,#contact{
   padding: 0.3em 0 0em 0em;
-  color: red;
-  background-color: green;
 
+  background-color: #4db94d;
+}
+#about,#contact{
+  color:white;
 }
 #media{
-  background: #ADFF2F;
+  background: white;
 }
 .images {
   display: flex;
-  flex-flow: row wrap-reverse;
+  flex-flow: row-reverse wrap;
   padding: 1px;
-  background:#ADFF2F;
+  flex-shrink: 1;
+  background:white;
+  flex-grow: 1;
 }
 
 
 .images li{
-  border-radius: 5px;
+  
   flex: 1 1 300px;
-  padding: 5px;
+  padding: 3px;
 }
 /*#wrapper {
   display: grid;
