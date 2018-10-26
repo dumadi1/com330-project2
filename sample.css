@@ -34,6 +34,13 @@ float:left;
     margin-bottom: 0.5em;
     border-radius: 10px;
     background-color: white;
+
+}
+#nav a:link {
+    text-decoration: none;
+}
+#nav a:hover {
+    color: red;
 }
 #nav {
 display: block;
@@ -41,6 +48,7 @@ margin-top:1em;
 margin-left: 1em;
 text-align: center;
 float:right;
+
 }
 img {
   display: block;
@@ -63,13 +71,14 @@ p{
 }
 
 #media{
-  background: white;
+  background:#c9efc2;
 }
 .images {
   display: flex;
   flex-flow: row-reverse wrap;
   padding: 1px;
-  background:white;
+  background:#c9efc2;
+
 }
 
 .images li{
@@ -85,5 +94,58 @@ p{
     display: inline-flex;
     font-size: 1.4em;
   }
-  
+
+}
+@media only screen and (min-width: 1000px) {
+  h1{
+    /*padding: 0.3em 0 0 1.3em;*/
+    font-size: 2.9em;
+    text-align: left;
+    padding-left: 0.3em;
+  }
+  #nav {
+
+    font-size: 2em;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-gap: 5px;
+  grid-auto-rows: auto;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  padding-left: 1em;
+  }
+  #vis{
+    grid-column: 1;
+  grid-row: 1;
+  background-color: white;
+  color: green;
+  }
+
+  #miss{
+    grid-column: 2;
+  grid-row: 1;
+
+  background-color: white;
+  color: green;
+  }
+  #phil{
+    grid-column: 3;
+  grid-row: 1;
+  background-color: white;
+  color: green;
+  }
+  }
+}
+@media only screen and (min-width: 1494px){
+  #grid p{
+    padding: 2em 2em 2em 2em;
+  }
+}
+@media only screen and (min-width: 786px){
+  .images li{
+    flex: 1 0 190px;
+    padding: 1px;
+  }
 }
