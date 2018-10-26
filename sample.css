@@ -29,16 +29,18 @@ display: inline-block;
 float:left;
 }
 #nav ul li{
-	display: inline-flex;
-  padding: 0.4em 0.4em 0.4em 0.4em;
-  border-radius: 10px;
-  background-color: white;
+    display: block;
+    padding: 0.4em 0.4em 0.4em 0.4em;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    background-color: white;
 }
 #nav {
-display: inline-flex;
-margin-top:2em;
-margin-left: 2em;
-float:center;
+display: block;
+margin-top:1em;
+margin-left: 1em;
+text-align: center;
+float:right;
 }
 img {
   display: block;
@@ -75,17 +77,13 @@ p{
   padding: 1px;
 }
 
-@media only screen and (max-width: 307px) {
+@media only screen and (min-width: 400px) {
   #nav ul li{
-
-  display: block;
-    margin-bottom: 0.4em;
+  display: inline-flex;
   }
   #nav {
-  display: block;
-  margin-top:1em;
-  margin-left: 1em;
-  text-align: center;
-  float:right;
+    display: inline-flex;
+    font-size: 1.4em;
   }
+  
 }
