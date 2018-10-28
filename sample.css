@@ -2,59 +2,104 @@
 v2.0 | 20110126
 License: none (public domain)
 */
+
+
 /* stylelint-disable*/
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-/* stylelint-enable */
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block
+}
+
+html {
+  line-height: 1
+}
+
+body {
+  line-height: inherit
+}
+
+ol, ul {
+  list-style: none
+}
+
+blockquote, q {
+  quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
 
 
 
-#header{
-  height:18em;
+
+#header {
+  height: 18em;
   position: relative;
-font-family: Helvetica , Arial;
+  font-family: Helvetica, Arial;
   background-image: url("my.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
-h1{
-  /*padding: 0.3em 0 0 1.3em;*/
+
+h1 {
+
   font-size: 2em;
   text-align: center;
 }
+
 #logo {
-margin-top:0.3em;
-margin-left:0.5em;
-display: inline-block;
-float:left;
+  margin-top: 0.3em;
+  margin-left: 0.5em;
+  display: inline-block;
+  float: left;
 }
-#nav ul li{
-    display: block;
-    padding: 0.4em 0.4em 0.4em 0.4em;
-    margin-bottom: 0.5em;
-    border-radius: 10px;
-    background-color: white;
 
+#nav ul li {
+  display: block;
+  padding: 0.4em 0.4em 0.4em 0.4em;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+  background-color: white;
 }
+
 #nav a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
-#nav a:hover {
-    color: red;
-}
-#nav {
-display: block;
-margin-top:1em;
-margin-left: 1em;
-text-align: center;
-float:right;
 
+#nav a:hover {
+  color: red;
 }
+
+#nav {
+  display: block;
+  margin-top: 1em;
+  margin-left: 1em;
+  text-align: center;
+  float: right;
+}
+
 img {
   display: block;
   max-width: 100%;
 }
-p{
+
+p {
   text-align: left;
   line-height: 1.7em;
   padding-left: 1.2em;
@@ -62,89 +107,112 @@ p{
   padding-bottom: 1em;
   hyphens: auto;
 }
-#about,#contact{
+
+#about, #contact {
   padding: 0.3em 0 0em 0em;
   text-decoration: none;
   background-color: #4db94d;
-  color:white;
+  color: white;
   text-align: left;
 }
 
-#media{
-  background:#c9efc2;
+#media {
+  background: #c9efc2;
+}
+
+#cont{
+display: grid;
+grid-template-columns: 50% 50%;
+grid-gap: 5px;
+grid-auto-rows: auto;
+
+}
+
+#phone{
+  grid-column: 1;
+  grid-row: 1;
+  padding-bottom: 5em;
+  padding-left: 2em;
+}
+#mail{
+  grid-column: 2;
+  grid-row: 1;
+padding-bottom: 5em;
+
 }
 .images {
   display: flex;
   flex-flow: row-reverse wrap;
-  padding: 1px;
-  background:#c9efc2;
-
+  padding: 5px;
+  background: #c9efc2;
 }
 
-.images li{
+.images li {
   flex: 1 1 300px;
   padding: 1px;
 }
 
 @media only screen and (min-width: 400px) {
-  #nav ul li{
-  display: inline-flex;
+  p{
+    font-size: 1.3em;
+  }
+  #nav ul li {
+    display: inline-flex;
   }
   #nav {
     display: inline-flex;
     font-size: 1.4em;
   }
-
 }
+
 @media only screen and (min-width: 1000px) {
-  h1{
+  h1 {
     /*padding: 0.3em 0 0 1.3em;*/
     font-size: 2.9em;
     text-align: left;
     padding-left: 0.3em;
   }
   #nav {
-
     font-size: 2em;
   }
-  #grid{
+  #grid {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-gap: 5px;
-  grid-auto-rows: auto;
-  padding-bottom: 1em;
-  padding-right: 2em;
-  padding-left: 1em;
+    grid-gap: 5px;
+    grid-auto-rows: auto;
+    padding-bottom: 1em;
+    padding-right: 2em;
+    padding-left: 1em;
   }
-  #vis{
+  #vis {
     grid-column: 1;
-  grid-row: 1;
-  background-color: white;
-  color: green;
+    grid-row: 1;
+    background-color: white;
+    color: green;
   }
-
-  #miss{
+  #miss {
     grid-column: 2;
-  grid-row: 1;
-
-  background-color: white;
-  color: green;
+    grid-row: 1;
+    background-color: white;
+    color: green;
   }
-  #phil{
+  #phil {
     grid-column: 3;
-  grid-row: 1;
-  background-color: white;
-  color: green;
-  }
+    grid-row: 1;
+    background-color: white;
+    color: green;
   }
 }
-@media only screen and (min-width: 1494px){
-  #grid p{
+
+
+}
+@media only screen and (min-width: 1494px) {
+  #grid p {
     padding: 2em 2em 2em 2em;
   }
 }
-@media only screen and (min-width: 786px){
-  .images li{
+@media only screen and (min-width: 786px) {
+  .images li {
     flex: 1 0 190px;
     padding: 1px;
   }
