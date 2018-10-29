@@ -45,7 +45,7 @@ table {
 }
 
 
-
+/*End of reset-css*/
 
 #header {
   height: 18em;
@@ -58,8 +58,7 @@ table {
 }
 
 h1 {
-
-  font-size: 2em;
+  font-size: 2.2em;
   text-align: center;
 }
 
@@ -104,6 +103,7 @@ p {
   line-height: 1.7em;
   padding-left: 1.2em;
   padding-right: 0.2em;
+  font-style: normal;
   padding-bottom: 1em;
   hyphens: auto;
 }
@@ -120,26 +120,28 @@ p {
   background: #c9efc2;
 }
 
-#cont{
-display: grid;
-grid-template-columns: 50% 50%;
-grid-gap: 5px;
-grid-auto-rows: auto;
-
+#cont {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 5px;
+  grid-auto-rows: auto;
 }
 
-#phone{
+#phone {
   grid-column: 1;
   grid-row: 1;
-  padding-bottom: 5em;
+  padding-bottom: 1em;
   padding-left: 2em;
+  font-size: 1.124em;
 }
-#mail{
+
+#mail {
   grid-column: 2;
   grid-row: 1;
-padding-bottom: 5em;
-
+  padding-bottom: 1em;
+  font-size: 1.124em;
 }
+
 .images {
   display: flex;
   flex-flow: row-reverse wrap;
@@ -153,7 +155,7 @@ padding-bottom: 5em;
 }
 
 @media only screen and (min-width: 400px) {
-  p{
+  p {
     font-size: 1.3em;
   }
   #nav ul li {
@@ -176,6 +178,7 @@ padding-bottom: 5em;
     font-size: 2em;
   }
   #grid {
+    font-family: cursive;
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-gap: 5px;
@@ -209,6 +212,11 @@ padding-bottom: 5em;
 @media only screen and (min-width: 1494px) {
   #grid p {
     padding: 2em 2em 2em 2em;
+  }
+
+  h1 {
+    /*padding: 0.3em 0 0 1.3em;*/
+    font-size: 3.3em;
   }
 }
 @media only screen and (min-width: 786px) {
