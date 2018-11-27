@@ -66,7 +66,7 @@ h1 {
 }
 .home{
   display:inline;
-  margin-top: 14em;
+  margin-top: 13em;
   padding-top: 0em;
   margin-left:-6.7999999999999999em;
   border-radius: 1.6em;
@@ -84,7 +84,7 @@ h1 {
   padding: 0.4em 0.4em 0.4em 0.4em;
   margin-bottom: 0.5em;
   border-radius: 10px;
-  background-color: #fffee9;
+  background-color: white;
 }
 #butt{
   background-color: #4db94d;
@@ -119,7 +119,13 @@ h1 {
   text-align: center;
   float: right;
 }
-
+h3{
+  padding-left: 0.6em;
+  text-align: center;
+  font-size: 1.5em;
+  color: green;
+  background-color: white;
+}
 img {
   display: block;
 
@@ -224,19 +230,19 @@ p {
   #vis {
     grid-column: 1;
     grid-row: 1;
-    background-color: #fffee9;
+    background-color: white;
     color: green;
   }
   #miss {
     grid-column: 2;
     grid-row: 1;
-    background-color: #fffee9;
+    background-color: white;
     color: green;
   }
   #phil {
     grid-column: 3;
     grid-row: 1;
-    background-color: #fffee9;
+    background-color: white;
     color: green;
   }
   #prim{
@@ -262,10 +268,15 @@ p {
   ol{
     font-size: 1.4em;
   }
+  h3{
+
+    font-size: 2em;
+
+  }
 }
 
 
-}
+
 @media only screen and (min-width: 1494px) {
   #grid p {
     padding: 2em 2em 2em 2em;
