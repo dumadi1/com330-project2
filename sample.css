@@ -85,6 +85,11 @@ h1 {
   margin-bottom: 0.5em;
   border-radius: 10px;
   background-color: white;
+
+}
+#nav ul li a{
+  color: green;
+
 }
 #butt{
   background-color: #4db94d;
@@ -129,6 +134,9 @@ h3{
 img {
   display: block;
 
+}
+ .image li {
+  display: none;
 }
 ol{
   font-size: 1em;
@@ -190,7 +198,23 @@ p {
   flex: 1 1 300px;
   padding: 1px;
 }
+.gallerys{
+  max-width: 1000px;
+  position: relative;
 
+}
+figcaption{
+  font-family: sans-serif;
+  background-color: white;
+  margin-right: 25em;
+}
+.next{
+  border-radius: 5em;
+  width: 4em;
+  height: 2em;
+  color: green;
+
+}
 @media only screen and (min-width: 400px) {
   p {
     font-size: 1.3em;
@@ -205,9 +229,25 @@ p {
   ol{
     font-size: 1.3em;
   }
+  .gallerys{
+    max-width: 1000px;
+    position: relative;
+    padding-left: 20%;
+
+  }
+  .next{
+    margin-left: 20%;
+    border-radius: 5em;
+    width: 6em;
+    height: 3em;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
+  .images li {
+    flex: 1 1 100px;
+    padding: 10px;
+  }
   h1 {
     /*padding: 0.3em 0 0 1.3em;*/
     font-size: 2.9em;
@@ -285,6 +325,13 @@ p {
   h1 {
     /*padding: 0.3em 0 0 1.3em;*/
     font-size: 3.3em;
+  }
+  .gallerys{
+    padding-left: 30%;
+
+  }
+  .next{
+    margin-left: 30%;
   }
 }
 @media only screen and (min-width: 786px) {
