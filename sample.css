@@ -202,11 +202,8 @@ p {
   display:flex;
   max-width: 1000px;
   position: relative;
+  margin-left: 2em;
 
-}
-.image li img {
-    width: 300px;
-    height: 168px;
 }
 
 figcaption{
@@ -217,7 +214,7 @@ figcaption{
   width: 4em;
   height: 2em;
   color: green;
-
+margin-left: 2em;
 }
 @media only screen and (min-width: 400px) {
   p {
