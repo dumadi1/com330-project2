@@ -199,17 +199,18 @@ p {
   padding: 1px;
 }
 .gallerys{
-  width: 100px;
-  height: 100px;
+  display:flex;
+  max-width: 1000px;
+  position: relative;
 
 }
-.image li img{
-  width:100px;
-  height:100px;
+.image li img {
+    width: 300px;
+    height: 168px;
 }
+
 figcaption{
   font-family: sans-serif;
-  background-color: white;
 }
 .next{
   border-radius: 5em;
@@ -233,7 +234,6 @@ figcaption{
     font-size: 1.3em;
   }
   .gallerys{
-    max-width: 1000px;
     position: relative;
     padding-left: 20%;
 
@@ -315,9 +315,6 @@ figcaption{
 
     font-size: 2em;
 
-  }
-  figcaption{
-    margin-right: 25em;
   }
 }
 
